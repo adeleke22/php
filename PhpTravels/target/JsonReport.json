@@ -1,0 +1,239 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6058927300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BasePage.TestSetup()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "User is able to book the hotel at PHP Travel",
+        "description": "",
+        "id": "phptravels-hotel-booking;user-is-able-to-book-the-hotel-at-php-travel;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 632483600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BasePage.TestDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 383653500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on dashboard",
+            "match": {
+              "location": "OnlineBookingScenario.UserIsOnDashboard()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6902220300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Add the booking",
+            "match": {
+              "location": "OnlineBookingScenario.ClickOnAddBookingButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4681133000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Provide First Name \"TestFC\" Last Name \"TestLC\" Mobile \"8750119889\" and Email \"TestUser@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestFC",
+                  "offset": 20
+                },
+                {
+                  "val": "TestLC",
+                  "offset": 39
+                },
+                {
+                  "val": "8750119889",
+                  "offset": 55
+                },
+                {
+                  "val": "TestUser@gmail.com",
+                  "offset": 78
+                }
+              ],
+              "location": "OnlineBookingScenario.provideCustomerDetails(String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15733666600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Provide the check-in \"18\" and check-out \"20\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "18",
+                  "offset": 22
+                },
+                {
+                  "val": "20",
+                  "offset": 41
+                }
+              ],
+              "location": "OnlineBookingScenario.provide_the_check_in_and_check_out(String,String)"
+            },
+            "matchedColumns": [
+              4,
+              5
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3372954100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Verify the GrandTotal",
+            "match": {
+              "location": "OnlineBookingScenario.verify_the_GrandTotal_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "PhpTravels hotel booking",
+    "description": "",
+    "id": "phptravels-hotel-booking",
+    "keyword": "Feature",
+    "uri": "BookingHotel.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5080317500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BasePage.TestSetup()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Verify the car location",
+        "description": "",
+        "id": "phptravels-car-location;verify-the-car-location;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 604138600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BasePage.TestDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5295380400,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User is on location screen",
+            "match": {
+              "location": "OnlineBookingScenario.user_is_on_location_screen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2345614000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Select the cityOne \"Dubai\", cityTwo \"Acapulco\", cityThree \"Alanya\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dubai",
+                  "offset": 20
+                },
+                {
+                  "val": "Acapulco",
+                  "offset": 37
+                },
+                {
+                  "val": "Alanya",
+                  "offset": 59
+                }
+              ],
+              "location": "OnlineBookingScenario.SelectThreeRandomCities(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5596904200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Verify that populated data is correct",
+            "match": {
+              "location": "OnlineBookingScenario.verify_that_populated_data_is_correct()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "PhpTravels car location",
+    "description": "",
+    "id": "phptravels-car-location",
+    "keyword": "Feature",
+    "uri": "CarLocation.feature"
+  }
+]
